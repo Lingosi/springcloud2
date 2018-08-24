@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="Encoding">
+    <file url="file://$PROJECT_DIR$/admin-server" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/admin-server/target/classes/META-INF/maven/com.zyh.springcloud/admin-server" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/client-a" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/client-a/target/classes/META-INF/maven/com.zyh.springcloud/client-a" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/client-songbai" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/client-songbai/target/classes/META-INF/maven/com.zyh.springcloud/client-songbai" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/commons" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/commons/target/classes/META-INF/maven/com.zyh.springcloud/commons" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/config-server" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/config-server/target/classes/META-INF/maven/com.zyh.springcloud/config-server" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/eureka-server" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/eureka-server/target/classes/META-INF/maven/com.zyh.springcloud/eureka-server" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/gateway-api" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/gateway-api/target/classes/META-INF/maven/com.zyh.springcloud/gateway-api" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/service-a" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/service-a/target/classes/META-INF/maven/com.zyh.springcloud/service-a" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/service-b" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/service-b/target/classes/META-INF/maven/com.zyh.springcloud/service-b" charset="UTF-8" />
+  </component>
+</project>

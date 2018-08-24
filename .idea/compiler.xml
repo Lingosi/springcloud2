@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="admin-server (1)" />
+        <module name="admin-server (2)" />
+        <module name="admin-server (3) (com.zyh.springcloud)" />
+        <module name="client-a (1)" />
+        <module name="client-a (2)" />
+        <module name="client-a (3) (com.zyh.springcloud)" />
+        <module name="client-songbai (1)" />
+        <module name="client-songbai (2)" />
+        <module name="client-songbai (3) (com.zyh.springcloud)" />
+        <module name="commons (1)" />
+        <module name="commons (2)" />
+        <module name="commons (3) (com.zyh.springcloud)" />
+        <module name="config-server (1)" />
+        <module name="config-server (2)" />
+        <module name="config-server (3) (com.zyh.springcloud)" />
+        <module name="eureka-server (1)" />
+        <module name="eureka-server (2)" />
+        <module name="eureka-server (3) (com.zyh.springcloud)" />
+        <module name="gateway-api (1)" />
+        <module name="gateway-api (2)" />
+        <module name="gateway-api (3) (com.zyh.springcloud)" />
+        <module name="service-a (1)" />
+        <module name="service-a (2)" />
+        <module name="service-a (3) (com.zyh.springcloud)" />
+        <module name="service-b (1)" />
+        <module name="service-b (2)" />
+        <module name="service-b (3) (com.zyh.springcloud)" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="admin-server (3)" target="1.8" />
+      <module name="client-a (3)" target="1.8" />
+      <module name="client-songbai (3)" target="1.8" />
+      <module name="commons (3)" target="1.8" />
+      <module name="config-server (3)" target="1.8" />
+      <module name="eureka-server (3)" target="1.8" />
+      <module name="gateway-api (3)" target="1.8" />
+      <module name="service-a (3)" target="1.8" />
+      <module name="service-b (3)" target="1.8" />
+    </bytecodeTargetLevel>
+  </component>
+</project>
