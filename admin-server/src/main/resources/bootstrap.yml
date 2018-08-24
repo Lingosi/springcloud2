@@ -1,0 +1,13 @@
+server:
+  port: 8910
+
+eureka:
+  client:
+    serviceUrl:
+          defaultZone: http://localhost:8010/eureka/ #eureka服务注册地址
+
+spring:
+  application:
+    name: admin
+
+

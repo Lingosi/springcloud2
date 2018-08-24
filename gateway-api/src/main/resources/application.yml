@@ -1,0 +1,21 @@
+server:
+  port: 8040
+  
+#配置eureka 的注册中心
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8010/eureka/ #eureka服务注册地址
+  
+spring:
+  application:
+    name: api
+    
+    
+zuul:
+  prefix: /api
+  routes:
+    service-a:
+      path: /service-a/**
+      service-id: service-a
+      strip-prefix: false

@@ -1,0 +1,26 @@
+# 注册服务的端口
+server:
+  port: 8762
+
+
+#配置eureka 的注册中心
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8010/eureka/ #eureka服务注册地址
+
+env:
+  name: lingosi
+  
+#配置当前服务的名称
+spring:
+  application:
+    name: service-config #配置服务名称
+  profiles:
+    active: native #设置为本地启动的方式，而不是通过git
+  cloud:
+    config:
+      server:
+        native:
+          searchLocations: classpath:/config # 配置文件所在目录，classpath（类路径）和（系统文件路径） file两种
+      

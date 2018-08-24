@@ -1,0 +1,37 @@
+env:
+  name: dev  
+  password: dev123456
+
+#spring-boot\u6574\u5408\u5355\u673A\u7248redis redis\u4F5C\u4E3A\u7F13\u5B58  
+spring:
+  profiles:
+    include: redis,datasource
+  cloud:
+    stream:
+      bindings:
+        input:
+          destination: queue.log.messages
+          binder: local_rabbit
+          group: logMessageConsumers
+        test_input:
+          destination: queue.log.messages1
+          binder: local_rabbit
+          group: logMessageConsumers1
+        output:
+          destination: queue.pretty.log.messages
+          binder: local_rabbit
+        test_output:
+          destination: queue.log.messages1
+          binder: local_rabbit
+          group: logMessageConsumers1
+      binders:
+        local_rabbit:
+          type: rabbit
+          environment:
+            spring:
+              rabbitmq:
+                host: localhost
+                port: 5672
+                username: lingosi
+                password: 123456
+                virtual-host: /

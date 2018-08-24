@@ -1,0 +1,38 @@
+server:
+  port: 8810
+  context-path: /s-a
+
+eureka:
+  client:
+    serviceUrl:
+          defaultZone: http://localhost:8010/eureka/ #eureka服务注册地址
+
+#spring:
+#  application:
+#    name: service-a #服务名称
+#  cloud:
+#    config:
+#      uri: http://localhost:8762 #配置服务的地址 bootstrap.yml
+#      enabled: true #开启配置
+#      profile: dev  #版本
+#      label: test     #git配置的分支信息，master类似的     
+      
+spring:
+  application:
+    name: service-a #服务名称
+  cloud:
+    config:
+      label: test #git配置的分支信息，master类似的 
+      profile: dev #对应配置服务中的{profile}
+      discovery: 
+        enabled: true #启用发现服务功能
+        service-id: service-config #指定服务名称
+
+logging:
+  path: /learning/log/service-a.logs/${spring.application.name}
+  config: classpath:logback-spring.xml
+  
+mybatis-plus:
+  mapper-locations: classpath:/mapper/*.xml
+
+

@@ -1,0 +1,13 @@
+server:
+  port: 8810
+
+eureka:
+  client:
+    serviceUrl:
+          defaultZone: http://localhost:8010/eureka/ #eureka服务注册地址
+
+          
+
+logging:
+  path: /learning/service-a.logs/${spring.application.name}
+  config: classpath:logback-spring.xml

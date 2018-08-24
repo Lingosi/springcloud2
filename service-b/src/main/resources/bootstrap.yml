@@ -1,0 +1,24 @@
+server:
+  port: 8811
+  context-path: /s-b
+
+eureka:
+  client:
+    serviceUrl:
+          defaultZone: http://localhost:8010/eureka/ #eureka服务注册地址
+      
+spring:
+  application:
+    name: service-b #服务名称
+  cloud:
+    config:
+      profile: prod #对应配置服务中的{profile}
+      discovery: 
+        enabled: true #启用发现服务功能
+        service-id: service-config #指定服务名称
+
+logging:
+  path: /learning/log/service-a.logs/${spring.application.name}
+  config: classpath:logback-spring.xml
+
+
