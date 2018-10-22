@@ -19,11 +19,10 @@ eureka:
       
 spring:
   application:
-    name: service-a #服务名称
+    name: service #服务名称
   cloud:
     config:
-      label: test #git配置的分支信息，master类似的 
-      profile: dev #对应配置服务中的{profile}
+      profile: dev
       discovery: 
         enabled: true #启用发现服务功能
         service-id: service-config #指定服务名称

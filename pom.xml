@@ -84,15 +84,6 @@
         </dependencies>
     </dependencyManagement>
 
-    <build>
-        <plugins>
-            <plugin>
-                <groupId>org.springframework.boot</groupId>
-                <artifactId>spring-boot-maven-plugin</artifactId>
-            </plugin>
-        </plugins>
-    </build>
-
     <repositories>
         <repository>
             <id>spring-milestones</id>
@@ -104,14 +95,17 @@
         </repository>
     </repositories>
     <modules>
-    	<module>eureka-server</module>
-    	<module>service-a</module>
-    	<module>client-a</module>
-    	<module>client-songbai</module>
+    <module>eureka-server</module>
+    <module>service-a</module>
+    <module>client-a</module>
+    <module>client-songbai</module>
     <module>config-server</module>
     <module>admin-server</module>
     <module>gateway-api</module>
     <module>service-b</module>
     <module>commons</module>
+    <module>cloud-gateway</module>
+    <module>hystrix</module>
+    <module>client-b</module>
   </modules>
 </project>

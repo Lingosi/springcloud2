@@ -64,3 +64,5 @@ spring:
                 username: lingosi
                 password: 123456
                 virtual-host: /
+test:
+  test1: 123456

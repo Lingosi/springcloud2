@@ -23,16 +23,28 @@
             <MaxHistory>30</MaxHistory>
         </rollingPolicy>
     </appender>
+    
+    <appender name="stash" class="net.logstash.logback.appender.LogstashTcpSocketAppender"> 
+		<destination>127.0.0.1:9250</destination> 
+		       
+		<encoder charset="UTF-8" class="net.logstash.logback.encoder.LogstashEncoder">
+			<customFields>{"logtype":"sctoc"}</customFields> 
+			<customFields>{"appname":"sb"}</customFields> 
+		</encoder>  
+		  
+	</appender>
 
 
     <root level="INFO">
         <appender-ref ref="FILEOUT"/>
+        <appender-ref ref="stash"/>
     </root>
 
 
     <springProfile name="!prod">
         <root level="INFO">
             <appender-ref ref="CONSOLE"/>
+            <appender-ref ref="stash"/>
         </root>
 
     </springProfile>

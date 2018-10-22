@@ -5,7 +5,7 @@ env:
 
 spring:
   redis:
-    hostName: localhost
+    hostName: 127.0.0.1
     port: 6379
     password: 123456
     database: 2

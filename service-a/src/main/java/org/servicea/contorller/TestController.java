@@ -37,10 +37,10 @@ import io.swagger.annotations.ApiOperation;
 @RequestMapping("/sa")
 @Api("swaggerDemoController相关的api")
 public class TestController {
-	@Value("${spring.application.name}")
+	/*@Value("${spring.application.name}")
     private String name;
     @Value("${server.port}")
-    private String port;
+    private String port;*/
     
     @Value("${env.name}")
     private String testName;
@@ -63,7 +63,8 @@ public class TestController {
     @ResponseBody
     public String hi(@RequestParam String id){
         //return "hi, " + id + ", " + name + ":" + port;
-    	return "hi, " + id + ", " + testName + " " + password + ":" + port;
+    	//return "hi, " + id + ", " + testName + " " + password + ":" + port;
+    	return "123";
     }
     
     @GetMapping(value="/redis")

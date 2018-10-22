@@ -61,6 +61,7 @@ public class RedisConfig {
     @Bean  
     public RedisTemplate<?, ?> getRedisTemplate() {  
     	System.out.println("获取template============================");
+    	System.out.println("*************redis：" + host + "，密码：" + password + "*************");
         JedisConnectionFactory factory = getConnectionFactory();  
         logger.info(this.host+","+factory.getHostName()+","+factory.getDatabase());  
         logger.info(this.password+","+factory.getPassword());  

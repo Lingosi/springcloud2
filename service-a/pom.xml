@@ -41,6 +41,11 @@
 	    <artifactId>spring-boot-admin-starter-client</artifactId>
 	    <version>1.4.5</version>
 	</dependency>
+	
+	<dependency>
+			<groupId>org.springframework.cloud</groupId>
+			<artifactId>spring-cloud-starter-eureka</artifactId>
+		</dependency>
 
 	<dependency>
     	<groupId>com.alibaba</groupId>
@@ -100,6 +105,10 @@
 	    <groupId>org.apache.velocity</groupId>
 	    <artifactId>velocity</artifactId>
 	</dependency>
+	<dependency>
+        <groupId>org.apache.velocity</groupId>
+        <artifactId>velocity-tools</artifactId>
+	</dependency>
 	
 	<!-- mybatis-plus -->
 	<dependency>
@@ -118,4 +127,46 @@
         <!-- mybatis-plus -->
   </dependencies>
   
+  <!--配置环境的profile-->
+  <profiles>
+    <!--dev默认激活，使用idea Spring Boot 配置启动工程，需要dev的配置-->
+    <profile>
+        <id>dev</id>
+        <properties>
+            <environment>dev</environment>
+        </properties>
+        <activation>
+            <activeByDefault>true</activeByDefault>
+        </activation>
+    </profile>
+    <profile>
+        <id>test</id>
+        <properties>
+            <environment>test</environment>
+        </properties>
+    </profile>
+    <profile>
+        <id>prod</id>
+        <properties>
+            <environment>prod</environment>
+        </properties>
+    </profile>
+  </profiles>
+  
+  <build>
+    <plugins>
+       <plugin>
+          <groupId>org.springframework.boot</groupId>
+          <artifactId>spring-boot-maven-plugin</artifactId>
+       </plugin>
+    </plugins>
+  </build>
+  
+  <repositories>
+    <repository>
+      <id>sctocnexus</id>
+      <name>Team Nexus Repository</name>
+      <url>http://192.168.2.214:8081/repository/maven-public/</url>
+    </repository>
+  </repositories>
 </project>

@@ -72,6 +72,27 @@
 	    )
 	</insert>
 	
+	<insert id="insertItems"  parameterType="java.util.List">
+		<!-- 获取数据库序列 -->
+		<selectKey keyProperty="did" order="BEFORE" resultType="java.lang.Long">
+			select SEQ_ID from dual
+		</selectKey>
+	    insert into person (
+		    id,
+		    name,
+		    birthday
+	    )
+	    (
+		    <foreach collection="list" item="item" index="index" separator="union all" >
+			     select
+			        #{did,jdbcType=INTEGER},
+			        #{item.name,jdbcType=VARCHAR},
+			        #{item.birthday,jdbcType=DATE}
+			     from dual
+		    </foreach>
+	    )
+	</insert>
+	
 	<select id="getMaxId" resultType="java.lang.Integer">
 		select max(id) from person
 	</select>

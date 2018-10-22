@@ -43,7 +43,9 @@
       <module name="config-server (3)" target="1.8" />
       <module name="eureka-server (3)" target="1.8" />
       <module name="gateway-api (3)" target="1.8" />
+      <module name="service-a (2)" target="1.5" />
       <module name="service-a (3)" target="1.8" />
+      <module name="service-a (3) (com.zyh.springcloud)" target="1.8" />
       <module name="service-b (3)" target="1.8" />
     </bytecodeTargetLevel>
   </component>

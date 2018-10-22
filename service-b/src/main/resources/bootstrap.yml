@@ -12,13 +12,17 @@ spring:
     name: service-b #服务名称
   cloud:
     config:
-      profile: prod #对应配置服务中的{profile}
-      discovery: 
+      profile: dev
+      discovery:
         enabled: true #启用发现服务功能
         service-id: service-config #指定服务名称
 
 logging:
   path: /learning/log/service-a.logs/${spring.application.name}
   config: classpath:logback-spring.xml
+
+test:
+  test1: 7890
+  test2: aabb
 
 

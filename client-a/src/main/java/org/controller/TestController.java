@@ -13,6 +13,12 @@ public class TestController {
 
     @RequestMapping(value="/hi")
     public String hi(@RequestParam String id){
-        return restTemplate.getForObject("http://service-a/hi?id="+id, String.class);
+        return restTemplate.getForObject("http://service/s-a/sa/hi?id="+id, String.class);
+    }
+    
+    @RequestMapping(value="/test2")
+    public String test2(){
+    	//请求地址：application.name + context-path + interface
+        return restTemplate.getForObject("http://service-b/s-b/sb/test2", String.class);
     }
 }

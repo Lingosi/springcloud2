@@ -20,26 +20,26 @@
     <dependency>
       <groupId>junit</groupId>
       <artifactId>junit</artifactId>
-      <version>3.8.1</version>
       <scope>test</scope>
     </dependency>
     
     <!-- Spring boot  基础依赖包 -->
+    	<!-- aop -->
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-aop</artifactId>
         </dependency>
-
+		<!-- web -->
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-web</artifactId>
         </dependency>
-
+		<!-- health -->
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-actuator</artifactId>
         </dependency>
-
+		<!-- redis -->
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-data-redis</artifactId>
@@ -83,13 +83,29 @@
             <artifactId>spring-cloud-starter-feign</artifactId>
             <scope>provided</scope>
         </dependency>
+        <!-- monitor start -->
         <dependency>
             <groupId>org.springframework.cloud</groupId>
             <artifactId>spring-cloud-starter-hystrix</artifactId>
             <scope>provided</scope>
         </dependency>
-
-
+        <dependency>
+		    <groupId>org.springframework.cloud</groupId>
+		    <artifactId>spring-cloud-starter-hystrix-dashboard</artifactId>
+		</dependency>
+		<dependency>
+        	<groupId>com.netflix.hystrix</groupId>
+        	<artifactId>hystrix-javanica</artifactId>
+    	</dependency>
+    	<dependency>
+    		<groupId>org.springframework.cloud</groupId>
+    		<artifactId>spring-cloud-netflix-turbine</artifactId>
+    	</dependency>
+    	<dependency>
+			<groupId>org.springframework.cloud</groupId>
+			<artifactId>spring-cloud-starter-turbine</artifactId>
+		</dependency>
+		<!-- monitor end -->
         <!-- Commons 依赖 -->
 
         <dependency>
@@ -147,15 +163,13 @@
 
 
         <!-- MySql数据库驱动 -->
-
-
         <dependency>
             <groupId>com.alibaba</groupId>
             <artifactId>druid</artifactId>
             <version>1.1.6</version>
         </dependency>
 
-
+		<!-- mybatisplus start -->
         <dependency>
             <groupId>com.baomidou</groupId>
             <artifactId>mybatisplus-spring-boot-starter</artifactId>
@@ -169,5 +183,15 @@
             <scope>provided</scope>
             <version>2.1.9</version>
         </dependency>
+        <!-- mybatisplus end -->
   </dependencies>
+  <!-- 
+  <repositories>
+        <repository>
+            <id>localnexus</id>
+            <name>Team Nexus Repository</name>
+            <url>http://localhost:8081/repository/maven-public/</url>
+        </repository>
+    </repositories>
+     -->
 </project>

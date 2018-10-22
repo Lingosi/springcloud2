@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/service-a/target/classes/META-INF/maven/com.zyh.springcloud/service-a/service-a (2).iml" filepath="$PROJECT_DIR$/service-a/target/classes/META-INF/maven/com.zyh.springcloud/service-a/service-a (2).iml" />
+      <module fileurl="file://$PROJECT_DIR$/service-a/target/classes/META-INF/maven/com.zyh.springcloud/service-a/service-a (3) (com.zyh.springcloud).iml" filepath="$PROJECT_DIR$/service-a/target/classes/META-INF/maven/com.zyh.springcloud/service-a/service-a (3) (com.zyh.springcloud).iml" />
+    </modules>
+  </component>
+</project>

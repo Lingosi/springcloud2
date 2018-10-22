@@ -15,7 +15,7 @@ spring:
 zuul:
   prefix: /api
   routes:
-    service-a:
-      path: /service-a/**
-      service-id: service-a
-      strip-prefix: false
+    s-a:
+      path: /s-a/**
+      serviceId: service
+      stripPrefix: false
